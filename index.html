@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Zarrin Tasnim | Personal Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio of Zarrin Tasnim - CSE student, skills, projects and contact information." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Zarrin Tasnim</div>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <button id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <h2>About</h2>
+      <div class="about-wrapper">
+        <div class="about-text">
+          <p>Hello! I’m Zarrin Tasnim, a CSE student interested in web development and problem solving.</p>
+          <p>
+            This is my simple personal portfolio website created as a part of my internship.
+            It is built using basic HTML5 and CSS with a clean, beginner friendly layout.
+          </p>
+          <p>
+            My goal is to learn how to structure web pages properly, write semantic HTML, and share
+            my skills and projects in one place.
+          </p>
+        </div>
+        <div>
+          <img src="images/Zarrin.jpeg" alt="Profile picture of Zarrin Tasnim" class="profile-pic" />
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <p>Here are some of the technical and soft skills I am currently learning and improving:</p>
+      <ul class="skills-list">
+        <li>HTML5 & Semantic Tags</li>
+        <li>CSS (basic layouts & styling)</li>
+        <li>JavaScript (fundamentals)</li>
+        <li>C / C++ Programming</li>
+        <li>Problem Solving & DSA basics</li>
+        <li>Git & GitHub (beginner)</li>
+        <li>Teamwork & Communication</li>
+        <li>Time Management</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>Some small projects I have worked on while learning:</p>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Personal Portfolio Website</h3>
+          <p>
+            A single page portfolio website built with HTML5 semantic elements and CSS.
+            Contains sections for About, Skills, Projects and Contact.
+          </p>
+          <p><strong>Tech:</strong> HTML, CSS</p>
+        </article>
+
+        <article class="project-card">
+          <h3>Contact Form Webpage</h3>
+          <p>
+            A responsive contact form with validation for email and required fields,
+            created during my internship tasks.
+          </p>
+          <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+        </article>
+
+        <article class="project-card">
+          <h3>Cloud Computing Mini Project</h3>
+          <p>
+            A small academic project explaining cloud service models and deployment models,
+            with real world examples and diagrams.
+          </p>
+          <p><strong>Tech:</strong> Presentation, Documentation</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>You can contact me using the form below.</p>
+
+      <form id="contactForm">
+        <div>
+          <label for="name">Name</label><br />
+          <input type="text" id="name" placeholder="Enter your name" />
+          <span class="error" id="nameError"></span>
+        </div>
+
+        <div>
+          <label for="email">Email</label><br />
+          <input type="email" id="email" placeholder="Enter your email" />
+          <span class="error" id="emailError"></span>
+        </div>
+
+        <div>
+          <label for="message">Message</label><br />
+          <textarea id="message" placeholder="Write your message here"></textarea>
+          <span class="error" id="messageError"></span>
+        </div>
+
+        <button type="submit">Send Message</button>
+        <p id="successMessage"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Zarrin Tasnim. All rights reserved.</p>
+    <p>Connect with me on
+      <a href="https://github.com/ZarrinTasnim44" target="_blank">GitHub</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
